@@ -2,7 +2,7 @@ import { Box, IconButton } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function WhatsAppFloat() {
-  const phoneNumber = "+91-8608378040"; // 🔥 your number (with country code)
+  const phoneNumber = "+91 8608378040";
 
   const handleClick = () => {
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
