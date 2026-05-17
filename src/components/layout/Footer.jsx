@@ -15,28 +15,28 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   const links = [
-  {
-    title: "Food Licensing",
-    path: "/fssai",
-  },
-  {
-    title: "ISO Certification",
-    path: "/iso",
-  },
-  {
-    title: "Government Services",
-    path: "/government-services",
-  },
-  {
-    title: "Property Services",
-    path: "/property-services",
-  },
-  {
-    title: "Web Development",
-    path: "/web-development",
-  },
- 
-];
+    {
+      title: "Food Licensing",
+      path: "/fssai",
+    },
+    {
+      title: "ISO Certification",
+      path: "/iso",
+    },
+    {
+      title: "Government Services",
+      path: "/government-services",
+    },
+    {
+      title: "Property Services",
+      path: "/property-services",
+    },
+    {
+      title: "Web Development",
+      path: "/web-development",
+    },
+
+  ];
 
   const columnStyle = {
     flex: 1,
@@ -52,7 +52,7 @@ export default function Footer() {
   return (
     <>
       <Box sx={{ bgcolor: "#fff", px: { xs: 2, md: 8 }, py: 6 }}>
-        
+
         {/* ROW */}
         <Box
           sx={{
@@ -85,33 +85,33 @@ export default function Footer() {
           <Box sx={columnStyle}>
             <Typography sx={heading}>Our Links</Typography>
             <Box sx={{ width: 50, height: 2, bgcolor: "#f4a100", my: 1.5 }} />
-{links.map((item, i) => (
-  <Box
-    key={i}
-    component={Link}
-    to={item.path}
-    sx={{
-      display: "flex",
-      alignItems: "center",
-      mb: 1.2,
-      textDecoration: "none",
-      color: "#555",
-      transition: "0.2s",
-      "&:hover": {
-        color: "#f4a100",
-        transform: "translateX(3px)",
-      },
-    }}
-  >
-    <ArrowForwardIosIcon
-      sx={{ fontSize: 12, mr: 1, color: "#f4a100" }}
-    />
+            {links.map((item, i) => (
+              <Box
+                key={i}
+                component={Link}
+                to={item.path}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 1.2,
+                  textDecoration: "none",
+                  color: "#555",
+                  transition: "0.2s",
+                  "&:hover": {
+                    color: "#f4a100",
+                    transform: "translateX(3px)",
+                  },
+                }}
+              >
+                <ArrowForwardIosIcon
+                  sx={{ fontSize: 12, mr: 1, color: "#f4a100" }}
+                />
 
-    <Typography sx={{ fontSize: 14 }}>
-      {item.title}
-    </Typography>
-  </Box>
-))}
+                <Typography sx={{ fontSize: 14 }}>
+                  {item.title}
+                </Typography>
+              </Box>
+            ))}
           </Box>
 
           {/* HELP */}
@@ -136,7 +136,7 @@ export default function Footer() {
 
             <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
               <PhoneIcon sx={{ color: "#f4a100", mr: 1 }} />
-              <Typography>+91 98765 43210</Typography>
+              <Typography>+91 8608378040</Typography>
             </Box>
 
             <Box sx={{ display: "flex", alignItems: "center" }}>
