@@ -2,7 +2,7 @@ import { Box, Typography, TextField, Button, Paper } from "@mui/material";
 import EnquiryForm from "../../components/form/EnquiryForm";
 import FinancialIcon from "../../assets/icons/financialService.png";
 import FormLeftContent from "../../components/form/FormLeftContent";
-import FinancialBg from "../../assets/images/FinancialBg.png";
+import FinancialBg from "../../assets/images/financialBg.png";
 
 export default function Financial() {
   return (

@@ -7,7 +7,7 @@ import { EffectCoverflow, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 
 import leftArrow from "../../assets/icons/leftArrowIcon.png";
-import rightArrow from "../../assets/icons/RightArrowIcon.png";
+import rightArrow from "../../assets/icons/rightArrowIcon.png";
 import ServiceBox from "../../components/service/ServiceBox";
 import { SERVICES } from "../../data/servicesData";
 
