@@ -1,4 +1,3 @@
-
 import { Box, Typography, IconButton, Button } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -8,7 +7,7 @@ import { EffectCoverflow, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 
 import leftArrow from "../../assets/icons/leftArrowIcon.png";
-import rightArrow from "../../assets/icons/rightArrowIcon.png";
+import rightArrow from "../../assets/icons/RightArrowIcon.png";
 import ServiceBox from "../../components/service/ServiceBox";
 import { SERVICES } from "../../data/servicesData";
 
@@ -17,40 +16,47 @@ export default function ServicesSection() {
 
   return (
     <Box sx={{ py: 5, px: { xs: 2, md: 6 }, backgroundColor: "#fff" }}>
-
-  <Box sx={{ textAlign: "center", mb: 5 }} data-aos="fade-up">
+      <Box sx={{ textAlign: "center", mb: 5 }} data-aos="fade-up">
         {/* Heading */}
-        <Typography sx={{
-          fontWeight: 700,
-          fontSize: {
-            xs: "1.5rem",
-            sm: "1.8rem",
-            md: "2.2rem",
-          }, textAlign: "center", mb: 2
-        }}>
+        <Typography
+          sx={{
+            fontWeight: 700,
+            fontSize: {
+              xs: "1.5rem",
+              sm: "1.8rem",
+              md: "2.2rem",
+            },
+            textAlign: "center",
+            mb: 2,
+          }}
+        >
           Everything Your Business{" "}
           <Box component="span" sx={{ color: "#c89b3c", fontStyle: "italic" }}>
             Needs
           </Box>
         </Typography>
-        <Typography sx={{ color: "#c89b3c", fontSize: { xs: "0.8rem", md: "0.9rem" }, mb: 3, textAlign: "center" }}>
+        <Typography
+          sx={{
+            color: "#c89b3c",
+            fontSize: { xs: "0.8rem", md: "0.9rem" },
+            mb: 3,
+            textAlign: "center",
+          }}
+        >
           WHAT WE OFFER
         </Typography>
-
-
       </Box>
       {/* Swiper */}
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         spaceBetween={20}
         autoHeight={false}
-        style={{ paddingBottom: "4px",paddingTop:"4px" }}
-
-  autoplay={{
-    delay: 2500,
-    disableOnInteraction: false,
-  }}
- speed={800}
+        style={{ paddingBottom: "4px", paddingTop: "4px" }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        speed={800}
         breakpoints={{
           0: { slidesPerView: 1 },
           600: { slidesPerView: 2 },
@@ -67,7 +73,10 @@ export default function ServicesSection() {
               alignItems: "stretch",
             }}
           >
-            <Box sx={{ height: "100%", width: "100%", display: "flex" }} data-aos="fade-up" >
+            <Box
+              sx={{ height: "100%", width: "100%", display: "flex" }}
+              data-aos="fade-up"
+            >
               <ServiceBox item={item} />
             </Box>
           </SwiperSlide>
@@ -105,6 +114,5 @@ export default function ServicesSection() {
         </Button>
       </Box>
     </Box>
-
   );
 }
