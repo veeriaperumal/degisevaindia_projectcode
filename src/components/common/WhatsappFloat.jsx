@@ -14,7 +14,7 @@ export default function WhatsAppFloat() {
         position: "fixed",
         bottom: 20,
         right: 20,
-        zIndex: 9999
+        zIndex: 9999,
       }}
     >
       <IconButton
@@ -25,9 +25,9 @@ export default function WhatsAppFloat() {
           width: 60,
           height: 60,
           "&:hover": {
-            backgroundColor: "#1ebe5d"
+            backgroundColor: "#1ebe5d",
           },
-          boxShadow: "0 4px 12px rgba(0,0,0,0.3)"
+          boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
         }}
       >
         <WhatsAppIcon sx={{ fontSize: 30 }} />
